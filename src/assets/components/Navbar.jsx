@@ -6,7 +6,7 @@ const navbar = () => {
         {name: 'login', link: '/'},
     ]
     return (
-        <div className='shadow-md w-full fixed top-0 left-0'>
+        <div className='shadow-md w-full fixed top-0 left-0 z-10'>
             <div className='md:px-10 py-4 px-7 bg-black flex justify-between items-center'>
                 {/* logo here */}
                 <div className='flex text-2xl cursor-pointer items-center text-white'>
