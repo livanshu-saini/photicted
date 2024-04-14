@@ -20,10 +20,10 @@ const InstagramPage = () => {
           </h1>
           <h4 className="text-xl">showcasing some frames in my vicinity</h4>
         </div>
-        <button className="flex gap-2 justify-center items-center bg-bgWhite p-2 rounded-sm">
-          <FaInstagram size={32} />
-          <span className="text-2xl">instagram</span>
-        </button>
+        <a href="https://instagram.com/photicted" target="_blank" rel="noreferrer" className="flex gap-2 cursor-pointer justify-center items-center bg-bgWhite p-2 rounded-sm group hover:bg-black transition-all duration-300">
+          <FaInstagram size={32} className="group-hover:text-bgWhite transition-all duration-300" />
+          <span className="text-2xl group-hover:text-bgWhite transition-all duration-300">instagram</span>
+        </a >
       </div>
     </div>
   );

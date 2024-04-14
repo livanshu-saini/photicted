@@ -9,6 +9,10 @@ export default {
       backgroundColor:{
         bgGrey:"#b0abab",
         bgWhite:"#d8d8d8"
+      },
+      colors:{
+        bgGrey:"#b0abab",
+        bgWhite:"#d8d8d8"
       }
     },
   },
