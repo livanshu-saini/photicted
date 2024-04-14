@@ -3,10 +3,10 @@ import React from 'react';
 
 const navbar = () => {
     let Links = [
-        {name: 'login', link: '/'},
+        { name: 'photicted', link: '/' },
     ]
     return (
-        <div className='shadow-md w-full fixed top-0 left-0 z-10'>
+        <div className='shadow-md w-full fixed top-0 left-0 z-20'>
             <div className='md:px-10 py-4 px-7 bg-black flex justify-between items-center'>
                 {/* logo here */}
                 <div className='flex text-2xl cursor-pointer items-center text-white'>
@@ -16,7 +16,7 @@ const navbar = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
                     </svg>
 
-                    
+
                 </div>
 
                 {/* links here */}
@@ -24,18 +24,17 @@ const navbar = () => {
                     {
                         Links.map(link => (
                             // eslint-disable-next-line react/jsx-key
-                            <li className='text-2xl'>
-                                <a href="/">
-                                    {link.name}
-                                </a>
+                            <li className='text-2xl cursor-pointer'>
+                                {/* <a href="/"> */}
+                                {link.name}
+                                {/* </a>a */}
                             </li>
                         ))
                     }
-                  
                 </ul>
-                
+
             </div>
-            
+
         </div>
     );
 };

@@ -1,0 +1,30 @@
+.tx_shadow {
+    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bx_shadow {
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    animation: revertPosition 500ms forwards;
+}
+
+.bx_shadow:hover {
+    animation: instaVideo 500ms forwards;
+}
+
+@keyframes instaVideo {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes revertPosition {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
