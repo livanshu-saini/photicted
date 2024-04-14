@@ -8,13 +8,25 @@ const Image = ({ downloadImgUrl, showImgUrl, name }) => {
 
   const handleDownload = () => {
 
-    const downloadLink = document.createElement('a');
-    downloadLink.href = downloadImgUrl;
-    downloadLink.download = name ?? "photicted"; // You can set the desired file name here
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-    console.log(downloadLink)
+    const fileId = extractGoogleDriveFileId(downloadImgUrl);
+    if (fileId) {
+      const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+      const downloadLink = document.createElement('a');
+      downloadLink.href = downloadUrl;
+      downloadLink.download = name ?? "photicted"; // You can set the desired file name here
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    }
+    else {
+      alert("Invalid URL please add drive link")
+    }
+  };
+
+
+  const extractGoogleDriveFileId = (url) => {
+    const match = url.match(/\/file\/d\/([^/]+)\//);
+    return match ? match[1] : null;
   };
 
   return (

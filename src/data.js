@@ -25,7 +25,7 @@ export const gridData = [
   {
     id: 2,
     showImgUrl: gridImg1,
-    downloadImgUrl: gridImg1,
+    downloadImgUrl: 'https://drive.google.com/file/d/1XZJn-OTlztbikN03ZXNYubOevjnlHpSn/view?usp=share_link',
     name: "landscape",
     category: "landscape"
   },
@@ -131,6 +131,13 @@ export const gridData = [
     id: 18,
     showImgUrl: gridImg1,
     downloadImgUrl: gridImg1,
+    name: "monochrome",
+    category: "monochrome"
+  },
+  {
+    id: 20,
+    showImgUrl: "https://res.cloudinary.com/dp85jk67f/image/upload/v1713091592/IMG_20220210_163151_Medium_xslv6c.jpg",
+    downloadImgUrl: "https://drive.google.com/file/d/1yogf102lDWDfP_8_GwmFBJ1BsPYuv3CU/view?usp=share_link",
     name: "monochrome",
     category: "monochrome"
   },
