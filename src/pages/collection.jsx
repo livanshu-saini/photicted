@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from '../components/image/Image'
 import { gridData } from '../data'
 
@@ -54,8 +54,8 @@ const Collection = () => {
         <div className='flex flex-[4] flex-col gap-10 p-10 overflow-scroll'>
           <div className='flex flex-wrap gap-10 items-center'>
             {
-              data.map((grid) => (
-                <Image showImgUrl={grid.showImgUrl} downloadImgUrl={grid.downloadImgUrl}
+              data.map((grid,index) => (
+                <Image key={index} showImgUrl={grid.showImgUrl} downloadImgUrl={grid.downloadImgUrl}
                   name={grid.name}
                 />
               ))

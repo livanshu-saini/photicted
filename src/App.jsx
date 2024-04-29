@@ -7,6 +7,9 @@ import Collection from "./pages/collection";
 
 function App() {
   return (
+    
+
+
     <div className="bg-bgGrey">
       <Navbar />
       <div className="h-0 lg:block lg:h-auto hidden">

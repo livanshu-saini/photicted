@@ -1,4 +1,4 @@
-import instaReel from "../assets/insta.mp4";
+// import instaReel from "../assets/insta.mp4";
 import { FaInstagram } from "react-icons/fa";
 
 const InstagramPage = () => {
@@ -6,9 +6,9 @@ const InstagramPage = () => {
     <div className="flex flex-row flex-1 justify-center items-center ">
       <div className="flex-1 justify-center items-center flex">
         <video
-          src={instaReel}
+          src={"https://res.cloudinary.com/dp85jk67f/video/upload/v1713104432/insta_ik3p8o.mp4"}
           autoPlay={true}
-          muted={true} // Ensure the video is muted
+          muted={true} 
           loop={true}
           className="h-[75vh] rounded-xl bx_shadow"
         />
