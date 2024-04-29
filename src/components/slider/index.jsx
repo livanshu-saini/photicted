@@ -16,12 +16,11 @@ import img5 from "../../images/treeColoured.png"
 
 
 const dataObj = [
-  { id: 1, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714377424/slider3_1_-2_twhiqw.jpg" },
-  { id: 2, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714376917/slider2_rv9n97.jpg" },
-  { id: 3, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714377750/1684124553582-01-2_enkcuf.jpg" },
-  { id: 4, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714378418/1714378267830-01-2_dft3ya.jpg" },
-  { id: 5, img: img4 },
-  { id: 6, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1713268412/slider1_b4pgae.jpg" },
+  { id: 1, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714379325/IMG_20240429_135535_h5rggm.jpg" },
+  { id: 2, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714379732/IMG_20240429_140452_idyrpp.jpg" },
+  { id: 3, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714379326/IMG_20240429_135551_ap2gvq.jpg" },
+  { id: 4, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714379323/IMG_20240429_135519_ln8rwg.jpg" },
+  { id: 5, img: "https://res.cloudinary.com/dp85jk67f/image/upload/v1714379323/IMG_20240429_135455_zep4sw.jpg" },
 
 ]
 
@@ -43,7 +42,7 @@ const Slider = () => {
       {
         dataObj.map((ele) => (
           <SwiperSlide  key={ele.id} className='h-[80vh]'>
-            <img src={ele.img} alt="Img" />
+            <img src={ele.img} alt="Img"/>
           </SwiperSlide>
         ))
       }
