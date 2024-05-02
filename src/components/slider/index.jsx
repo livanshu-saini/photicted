@@ -41,7 +41,7 @@ const Slider = () => {
     >
       {
         dataObj.map((ele) => (
-          <SwiperSlide  key={ele.id} className='h-[80vh]'>
+          <SwiperSlide  key={ele.id} className='h-[10vh]'>
             <img src={ele.img} alt="Img"/>
           </SwiperSlide>
         ))
