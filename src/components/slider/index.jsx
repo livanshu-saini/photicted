@@ -5,11 +5,11 @@ import 'swiper/css/pagination';
 
 import { Pagination, Autoplay } from 'swiper/modules';
 // import img from "../../images/treeColoured.png"
-import img1 from "../../images/treeColoured.png"
-import img2 from "../../images/treeColoured.png"
-import img3 from "../../images/treeColoured.png"
-import img4 from "../../images/treeColoured.png"
-import img5 from "../../images/treeColoured.png"
+// import img1 from "../../images/treeColoured.png"
+// import img2 from "../../images/treeColoured.png"
+// import img3 from "../../images/treeColoured.png"
+// import img4 from "../../images/treeColoured.png"
+// import img5 from "../../images/treeColoured.png"
 
 
 
